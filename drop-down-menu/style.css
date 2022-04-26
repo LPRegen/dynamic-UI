@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+/* ! Display nav on hover */
+#navbar-hover {
+  position: relative;
+  display: inline-block;
+}
+
+#btn-display {
+  all: unset;
+  cursor: pointer;
+}
+
+.content-items {
+  display: none;
+  position: absolute;
+}
+
+.content-items a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+#navbar-hover:hover .content-items {
+  display: block;
+}
